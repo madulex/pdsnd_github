@@ -24,7 +24,7 @@ def get_filters():
 
     #User inputs for the data
 
-    print('Please select the city you like to explorer data ')
+    print('Please select any of the city below that you like to explorer data from ')
     print('A: chicago')
     print('B: new york city')
     print('C: washington')
@@ -35,7 +35,7 @@ def get_filters():
     cities = ['chicago', 'new york city', 'washington']
 
     while True:
-        city = input('Enter a city: ')
+        city = input('Enter or Type the name of preference city: ')
         if city.lower() in cities:
             print('Data in city:', city)
             break
@@ -50,7 +50,7 @@ def get_filters():
 
     months = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
     while True:
-        month = input('choose a month from january to june: ')
+        month = input('choose a month from january to june to explore: ')
         if month.lower() in months:
             print('Data in month:', month)
             break
