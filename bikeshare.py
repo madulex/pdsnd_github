@@ -258,12 +258,12 @@ def user_stats(df):
 
     # code for common year of birth display
     try:
-        el = np.min(df['Birth Year'])
-        print('Earliest Birth Year:', el)
-        mr = np.max(df['Birth Year'])
-        print('Most Recent Birth Year:', mr)
-        mc = df['Birth Year'].mode()[0]
-        print('Most Common Birth Year:', mc)
+        earliest_birth_year = np.min(df['Birth Year'])
+        print('Earliest Birth Year:', earliest_birth_year)
+        most_recent_birth_year = np.max(df['Birth Year'])
+        print('Most Recent Birth Year:', most_recent_birth_year)
+        most_common_birth_year = df['Birth Year'].mode()[0]
+        print('Most Common Birth Year:', most_common_birth_year)
     except:
         print('No data in Birth Year')
 
